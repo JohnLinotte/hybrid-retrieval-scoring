@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hybrid-retrieval-scoring"
+version = "0.1.0"
+description = "Hybrid document retrieval: BM25 + TF-IDF fused with Reciprocal Rank Fusion, with bilingual FR/EN stopwords."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "John Linotte", email = "contact@harnais.be" }]
+keywords = ["bm25", "tf-idf", "retrieval", "reciprocal-rank-fusion", "search", "ranking"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Text Processing :: Indexing",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+    "bm25s",
+    "scikit-learn",
+    "numpy",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.urls]
+Homepage = "https://harnais.be"
+
+[tool.setuptools.packages.find]
+where = ["src"]

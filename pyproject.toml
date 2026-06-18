@@ -29,6 +29,7 @@ test = ["pytest"]
 
 [project.urls]
 Homepage = "https://harnais.be"
+Repository = "https://github.com/JohnLinotte/hybrid-retrieval-scoring"
 
 [tool.setuptools.packages.find]
 where = ["src"]

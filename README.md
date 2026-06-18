@@ -32,8 +32,16 @@ diluted by untrimmed English function words (and the reverse).
 
 ## Install
 
+From PyPI:
+
 ```bash
-pip install -e .
+pip install hybrid-retrieval-scoring
+```
+
+Or from source (GitHub):
+
+```bash
+pip install git+https://github.com/JohnLinotte/hybrid-retrieval-scoring.git
 ```
 
 Runtime dependencies: `bm25s`, `scikit-learn`, `numpy`.
